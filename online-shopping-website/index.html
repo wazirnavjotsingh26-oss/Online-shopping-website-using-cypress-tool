@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find everyday favourites at ShopEasy, your simple online shopping destination.">
+  <title>ShopEasy | Everyday finds, made easy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="ShopEasy home"><span class="brand-mark">S</span>ShopEasy</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a id="home-link" class="active" href="index.html" aria-current="page">Home</a>
+        <a id="products-link" href="products.html">Products</a>
+        <a id="login-link" href="login.html">Login</a>
+        <a id="cart-link" class="cart-nav-link" href="cart.html">Cart <span id="cart-count" class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=2000&q=85" alt="A bright, modern clothing shop">
+      <div class="hero-content">
+        <p class="eyebrow">Good finds. Fair prices.</p>
+        <h1>Everyday style,<br>made easy.</h1>
+        <p class="hero-copy">Useful little upgrades and the pieces you reach for every day, all in one place.</p>
+        <form id="home-search-form" class="hero-search" action="products.html" method="get" role="search">
+          <label class="visually-hidden" for="home-search">Search products</label>
+          <input id="home-search" name="q" type="search" placeholder="Search for something good" autocomplete="off">
+          <button class="button button-dark" type="submit">Search</button>
+        </form>
+        <a id="shop-now-btn" class="button button-light" href="products.html">Shop Now <span aria-hidden="true">&#8594;</span></a>
+      </div>
+      <span class="hero-note">New season, new favourites</span>
+    </section>
+
+    <section id="featured-products" class="section-wrap featured-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark">A good place to start</p>
+          <h2>Popular right now</h2>
+        </div>
+        <a class="text-link" href="products.html">See all products <span aria-hidden="true">&#8594;</span></a>
+      </div>
+      <p id="shop-message" class="shop-message" role="status" aria-live="polite"></p>
+      <div class="product-grid featured-grid">
+        <article class="product-card" data-product-id="1" data-name="Nike Running Shoes" data-category="Footwear">
+          <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Red Nike running shoe" loading="lazy"></div>
+          <div class="product-info"><p class="product-category">Footwear</p><h3>Nike Running Shoes</h3><p class="product-price">₹2,999</p><button id="add-to-cart-1" class="button button-small button-dark add-to-cart" type="button" data-product-id="1">Add to Cart</button></div>
+        </article>
+        <article class="product-card" data-product-id="2" data-name="Casual T-Shirt" data-category="Clothing">
+          <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Folded white casual T-shirt" loading="lazy"></div>
+          <div class="product-info"><p class="product-category">Clothing</p><h3>Casual T-Shirt</h3><p class="product-price">₹799</p><button id="add-to-cart-2" class="button button-small button-dark add-to-cart" type="button" data-product-id="2">Add to Cart</button></div>
+        </article>
+        <article class="product-card" data-product-id="3" data-name="Smart Watch" data-category="Accessories">
+          <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Black smartwatch with a dark face" loading="lazy"></div>
+          <div class="product-info"><p class="product-category">Accessories</p><h3>Smart Watch</h3><p class="product-price">₹1,999</p><button id="add-to-cart-3" class="button button-small button-dark add-to-cart" type="button" data-product-id="3">Add to Cart</button></div>
+        </article>
+        <article class="product-card" data-product-id="5" data-name="Wireless Headphones" data-category="Electronics">
+          <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Wireless over-ear headphones" loading="lazy"></div>
+          <div class="product-info"><p class="product-category">Electronics</p><h3>Wireless Headphones</h3><p class="product-price">₹2,499</p><button id="add-to-cart-5" class="button button-small button-dark add-to-cart" type="button" data-product-id="5">Add to Cart</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-promo">
+      <div class="section-wrap promo-inner"><p class="eyebrow">A little more joy in the everyday</p><h2>Find your next favourite.</h2><a class="text-link text-link-light" href="products.html">Browse the collection <span aria-hidden="true">&#8594;</span></a></div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"><div class="section-wrap footer-inner"><a class="brand brand-footer" href="index.html"><span class="brand-mark">S</span>ShopEasy</a><p>Thoughtful picks for everyday life.</p><p class="copyright">&copy; 2026 ShopEasy</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to your ShopEasy account.">
+  <title>Login | ShopEasy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="index.html" aria-label="ShopEasy home"><span class="brand-mark">S</span>ShopEasy</a>
+    <nav class="main-nav" aria-label="Main navigation"><a id="home-link" href="index.html">Home</a><a id="products-link" href="products.html">Products</a><a id="login-link" class="active" href="login.html" aria-current="page">Login</a><a id="cart-link" class="cart-nav-link" href="cart.html">Cart <span id="cart-count" class="cart-count">0</span></a></nav>
+  </div></header>
+
+  <main class="section-wrap auth-page">
+    <section class="auth-intro"><p class="eyebrow eyebrow-dark">Welcome back</p><h1>Good to see you.</h1><p>Sign in to pick up where you left off.</p><div class="auth-accent" aria-hidden="true"><span>SE</span></div></section>
+    <form id="login-form" class="form-panel" novalidate>
+      <h2>Sign in</h2>
+      <p class="form-intro">Use your ShopEasy account details.</p>
+      <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+      <label for="password">Password</label><input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+      <div class="form-options"><span id="forgot-password">Forgot Password?</span></div>
+      <button id="login-btn" class="button button-dark button-full" type="submit">Login</button>
+      <p id="login-message" class="form-message" role="status" aria-live="polite"></p>
+      <p class="account-prompt">New to ShopEasy? <a id="create-account-link" href="mailto:hello@shopeasy.example?subject=Create%20a%20ShopEasy%20account">Create Account</a></p>
+    </form>
+  </main>
+
+  <footer id="site-footer" class="site-footer"><div class="section-wrap footer-inner"><a class="brand brand-footer" href="index.html"><span class="brand-mark">S</span>ShopEasy</a><p>Thoughtful picks for everyday life.</p><p class="copyright">&copy; 2026 ShopEasy</p></div></footer>
+</body>
+</html>

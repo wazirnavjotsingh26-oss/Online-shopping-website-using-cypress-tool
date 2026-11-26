@@ -1,0 +1,19 @@
+{
+  "name": "nodelab",
+  "version": "1.0.0",
+  "description": "Node.js lab project",
+  "main": "first.js",
+  "scripts": {
+    "dev": "node first.js"
+  },
+  "type": "commonjs",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^16.2.0"
+  },
+  "allowScripts": {
+    "cypress@16.2.0": true
+  }
+}
